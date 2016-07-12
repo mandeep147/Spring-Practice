@@ -1,0 +1,8 @@
+package spring;
+
+public class Triangle {
+	private Point pointA, pointB, pointC;
+	public void draw(){
+		
+	}
+}

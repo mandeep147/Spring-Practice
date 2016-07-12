@@ -1,0 +1,6 @@
+package snippet;
+
+public class Snippet {
+			<constructor-arg type="java.lang.String" value="20"/>
+}
+

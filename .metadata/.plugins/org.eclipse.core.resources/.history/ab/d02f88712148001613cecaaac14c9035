@@ -1,0 +1,25 @@
+/**
+ * http://usejsdoc.org/
+ */
+var ejs = require('ejs');
+var mysql = require('mysql');
+
+function getConnection(){
+	var connection = mysql.createConnection({
+		host : 'node';
+		user : 'root';
+		password : 'root';
+		database : 'test';
+		port : 3306
+	});
+	return connection;
+}
+function getConnection(){
+	var connection = mysql.createConnection({
+	host : 'localhost', //host where mysql server is running
+	user : 'root', //user for the mysql application
+	password : '', //password for the mysql application
+	database : 'test', //database name
+	port : 3306 //port, it is 3306 by default for mysql
+	});
+}

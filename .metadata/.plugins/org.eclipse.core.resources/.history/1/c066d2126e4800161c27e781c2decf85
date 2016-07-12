@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="triangle" class="spring.Triangle">
+		<property name = "points">
+		<!-- name is name of member variable in java class -->
+			<list>
+				<ref bean = "zeroPoint" />
+				<ref bean = "point2" />
+				<ref bean = "point3" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="zeroPoint" class="spring.Point">
+		<property name = "x" value = "0"></property>
+		<property name = "y" value = "0"></property>
+	</bean>
+	<bean id="point2" class="spring.Point">
+		<property name = "x" value = "-20"></property>
+		<property name = "y" value = "0"></property>
+	</bean>	
+	<bean id= "point3" class="spring.Point">
+		<property name = "x" value = "20"></property>
+		<property name = "y" value = "0"></property>
+	</bean>
+	<!-- renaming the bean definition or use "name" tag in bean -->
+	<alias name = "triangle" alias = "triangle-alias"/>
+</beans>
