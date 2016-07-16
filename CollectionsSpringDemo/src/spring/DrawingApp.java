@@ -1,4 +1,3 @@
-//referring bean property to another properties
 package spring;
 
 import org.springframework.beans.factory.BeanFactory;
