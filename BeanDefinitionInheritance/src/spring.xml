@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id = "parent" class = "spring.Triangle">
+		<property name = "pointA" ref = "pointA"></property>
+	</bean> 
+	<bean id="triangle1" class = "spring.Triangle" parent = "parent">
+		<property name = "pointB" ref = "pointB"></property>
+		<property name = "pointC" ref = "pointC"></property>
+	</bean>
+	<bean id = "triangle2" class = "spring.Triangle" parent = "parent">
+		<property name = "pointB" ref = "pointB"></property>
+	</bean>
+
+	<bean id = "pointA" class = "spring.Point">
+		<property name = "x" value = "0"></property>
+		<property name = "y" value = "0"></property>
+	</bean>
+	<bean id = "pointB" class = "spring.Point">
+		<property name = "x" value = "-20"></property>
+		<property name = "y" value = "0"></property>
+	</bean>	
+	<bean id = "pointC" class = "spring.Point">
+		<property name = "x" value = "20"></property>
+		<property name = "y" value = "0"></property>
+	</bean>
+	
+	<alias name = "triangle" alias = "triangle-alias"/>
+</beans>
