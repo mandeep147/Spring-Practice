@@ -4344,3 +4344,279 @@ The release after Mars (4.5) will no longer support the deprecated usage!
 
 !ENTRY org.eclipse.debug.ui 4 120 2016-07-16 00:06:37.039
 !MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-07-16 15:48:14.738
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\rt.jar
+  [+] D:\downloads\commons-logging-1.2-bin\commons-logging-1.2\commons-logging-1.2.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:167)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-07-17 00:49:16.035
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\rt.jar
+  [+] D:\downloads\commons-logging-1.2-bin\commons-logging-1.2\commons-logging-1.2.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:167)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-07-17 01:09:41.826
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\rt.jar
+  [+] D:\downloads\commons-logging-1.2-bin\commons-logging-1.2\commons-logging-1.2.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:167)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
