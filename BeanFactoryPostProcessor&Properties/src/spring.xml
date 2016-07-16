@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id = "triangle" class = "spring.Triangle" >
+			<property name = "pointA" ref = "pointA"/>
+		<property name = "pointB" ref = "pointB"/>
+		<property name = "pointC" ref = "pointC"/>
+	</bean>
+	
+	<bean id = "pointA" class = "spring.Point">
+		<property name = "x" value = "${pointA.pointX}"></property>
+		<property name = "y" value = "${pointA.pointX}"></property>
+	</bean>
+	<bean id = "pointB" class = "spring.Point">
+		<property name = "x" value = "${pointB.pointX}"></property>
+		<property name = "y" value = "${pointB.pointY}"></property>
+	</bean>	
+	<bean id = "pointC" class = "spring.Point">
+		<property name = "x" value = "${pointC.pointX}"></property>
+		<property name = "y" value = "${pointC.pointY}"></property>
+	</bean>
+	<bean class = "spring.beanFactoryPostProcessor" />
+	<bean class = "org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
+		<property name = "locations" value = "points.properties"></property>
+	</bean>
+</beans>
