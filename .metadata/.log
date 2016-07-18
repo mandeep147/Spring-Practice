@@ -4620,3 +4620,911 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2016-07-17 03:07:36.406
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.internal.resources.ResourceException: Resource '/HelloWorld' is not open.
+	at org.chromium.debug.ui.actions.FileBasedAction.readFiles(FileBasedAction.java:117)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFilesFromSelectionObject(FileBasedAction.java:94)
+	at org.chromium.debug.ui.actions.FileBasedAction.access$0(FileBasedAction.java:88)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:71)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:1)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.createRunnableFromRawSelection(SelectionBasedAction.java:115)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.selectionChanged(SelectionBasedAction.java:101)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:273)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:156)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:159)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:104)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:316)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:393)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:333)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:461)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:493)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5037)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:262)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4221)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/HelloWorld' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:59)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:51)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:116)
+	at org.eclipse.core.resources.mapping.ResourceTraversal.accept(ResourceTraversal.java:70)
+	at org.eclipse.core.resources.mapping.ResourceMapping.accept(ResourceMapping.java:61)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFiles(FileBasedAction.java:115)
+	... 55 more
+
+!ENTRY org.eclipse.ui 4 4 2016-07-17 03:07:36.416
+!MESSAGE Failed to update action org.chromium.debug.ui.actions.BeautifySourceAction
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/HelloWorld' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:59)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:51)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:116)
+	at org.eclipse.core.resources.mapping.ResourceTraversal.accept(ResourceTraversal.java:70)
+	at org.eclipse.core.resources.mapping.ResourceMapping.accept(ResourceMapping.java:61)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFiles(FileBasedAction.java:115)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFilesFromSelectionObject(FileBasedAction.java:94)
+	at org.chromium.debug.ui.actions.FileBasedAction.access$0(FileBasedAction.java:88)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:71)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:1)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.createRunnableFromRawSelection(SelectionBasedAction.java:115)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.selectionChanged(SelectionBasedAction.java:101)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:273)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:156)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:159)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:104)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:316)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:393)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:333)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:461)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:493)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5037)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:262)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4221)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-07-17 03:07:36.416
+!MESSAGE Resource '/HelloWorld' is not open.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2016-07-17 03:07:44.156
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.internal.resources.ResourceException: Resource '/Annotations' is not open.
+	at org.chromium.debug.ui.actions.FileBasedAction.readFiles(FileBasedAction.java:117)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFilesFromSelectionObject(FileBasedAction.java:94)
+	at org.chromium.debug.ui.actions.FileBasedAction.access$0(FileBasedAction.java:88)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:71)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:1)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.createRunnableFromRawSelection(SelectionBasedAction.java:115)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.selectionChanged(SelectionBasedAction.java:101)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:273)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:156)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:159)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:104)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:316)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:393)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:333)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:461)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:493)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5037)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:262)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4221)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Annotations' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:59)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:51)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:116)
+	at org.eclipse.core.resources.mapping.ResourceTraversal.accept(ResourceTraversal.java:70)
+	at org.eclipse.core.resources.mapping.ResourceMapping.accept(ResourceMapping.java:61)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFiles(FileBasedAction.java:115)
+	... 55 more
+
+!ENTRY org.eclipse.ui 4 4 2016-07-17 03:07:44.161
+!MESSAGE Failed to update action org.chromium.debug.ui.actions.BeautifySourceAction
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Annotations' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:59)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:51)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:116)
+	at org.eclipse.core.resources.mapping.ResourceTraversal.accept(ResourceTraversal.java:70)
+	at org.eclipse.core.resources.mapping.ResourceMapping.accept(ResourceMapping.java:61)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFiles(FileBasedAction.java:115)
+	at org.chromium.debug.ui.actions.FileBasedAction.readFilesFromSelectionObject(FileBasedAction.java:94)
+	at org.chromium.debug.ui.actions.FileBasedAction.access$0(FileBasedAction.java:88)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:71)
+	at org.chromium.debug.ui.actions.FileBasedAction$Multiple.readSelection(FileBasedAction.java:1)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.createRunnableFromRawSelection(SelectionBasedAction.java:115)
+	at org.chromium.debug.ui.actions.SelectionBasedAction.selectionChanged(SelectionBasedAction.java:101)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:273)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:156)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:159)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:104)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:316)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:393)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:333)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:461)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:493)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5037)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:262)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4221)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-07-17 03:07:44.161
+!MESSAGE Resource '/Annotations' is not open.
+!SESSION 2016-07-17 12:18:53.245 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2016-07-17 12:18:59.460
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-17 12:18:59.460
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(com.amazonaws.eclipse.dynamodb.editor.runScan,Run scan,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@eaa07bb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.nodeclipse.nodejs.run,Run Node Application,
+		Run Node Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6eae3730,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-07-17 12:19:04.268
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mndpk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-17 12:19:50.036
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-17 12:19:52.052
+!MESSAGE Monitoring content of C:\Users\mndpk\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-17 12:19:52.230
+!MESSAGE AWS toolkit core plugin initialized after 2194 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-17 12:19:52.240
+!MESSAGE Found valid identity id cache us-east-1:9829a13e-ebf2-45fd-b32d-1513a6246c81
+
+!ENTRY org.eclipse.ui 2 0 2016-07-17 12:19:52.268
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.amazonaws.eclipse.elasticbeanstalk' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.debug.ui 4 120 2016-07-17 12:20:46.265
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY org.eclipse.recommenders.subwords.rcp 4 1 2016-07-17 15:38:34.199
+!MESSAGE Exception during code completion
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.checkCancel(CompletionEngine.java:1683)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.acceptType(CompletionEngine.java:1181)
+	at org.eclipse.jdt.internal.core.SearchableEnvironmentRequestor.acceptType(SearchableEnvironmentRequestor.java:115)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1085)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1019)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:962)
+	at org.eclipse.jdt.internal.core.NameLookup.findAllTypes(NameLookup.java:328)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:995)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:962)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:641)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:455)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.findTypesAndPackages(CompletionEngine.java:10707)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.completionOnMarkerAnnotationName(CompletionEngine.java:2551)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:1743)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:1939)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:131)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:345)
+	at org.eclipse.recommenders.internal.subwords.rcp.SubwordsSessionProcessor.computeProposals(SubwordsSessionProcessor.java:316)
+	at org.eclipse.recommenders.internal.subwords.rcp.SubwordsSessionProcessor.getNewProposals(SubwordsSessionProcessor.java:205)
+	at org.eclipse.recommenders.internal.subwords.rcp.SubwordsSessionProcessor.initializeContext(SubwordsSessionProcessor.java:145)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireInitializeContext(IntelligentCompletionProposalComputer.java:292)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:322)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:279)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:180)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1266)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1164)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1581)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4795)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4676)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-07-17 15:45:00.559
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\rt.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aopalliance-1.0-sources.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aopalliance-alpha1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\asm-3.3.1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectj-1.7.1-src.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectj-1.7.1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectjrt-1.7.3.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectjweaver-1.7.0.jar
+  [+] D:\academics\msse\275 zhang\aop jars\cglib-2.2.2.jar
+  [+] D:\downloads\commons-logging-1.2-bin\commons-logging-1.2\commons-logging-1.2.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:167)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2016-07-18 00:58:58.662 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-07-18 00:59:00.971
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2016-07-18 00:59:05.318
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-18 00:59:05.318
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(com.amazonaws.eclipse.dynamodb.editor.runScan,Run scan,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2af31aba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.nodeclipse.nodejs.run,Run Node Application,
+		Run Node Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@682d8dad,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-07-18 00:59:11.275
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mndpk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 00:59:25.155
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 00:59:27.284
+!MESSAGE Monitoring content of C:\Users\mndpk\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 00:59:27.423
+!MESSAGE AWS toolkit core plugin initialized after 2268 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 00:59:27.434
+!MESSAGE Found valid identity id cache us-east-1:9829a13e-ebf2-45fd-b32d-1513a6246c81
+
+!ENTRY org.eclipse.ui 2 0 2016-07-18 00:59:27.461
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.amazonaws.eclipse.elasticbeanstalk' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.debug.ui 4 120 2016-07-18 01:00:38.276
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2016-07-18 01:22:03.162
+!MESSAGE Failed to resolve selection in ‘=Pointcuts/src<spring.aspect{LoggingAspect.java’ at offset 547.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:164)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2016-07-18 17:11:19.042
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-07-18 17:18:08.117
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\rt.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aopalliance-1.0-sources.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aopalliance-alpha1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\asm-3.3.1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectj-1.7.1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectjrt-1.7.3.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectjweaver-1.7.0.jar
+  [+] D:\academics\msse\275 zhang\aop jars\cglib-2.2.2.jar
+  [+] D:\downloads\commons-logging-1.2-bin\commons-logging-1.2\commons-logging-1.2.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:167)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY tern.eclipse.ide.core 4 0 2016-07-18 17:59:08.207
+!MESSAGE Error while tern file synchronization
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/HelloWorld' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at tern.eclipse.ide.internal.core.resources.IDETernProject.getTernProject(IDETernProject.java:708)
+	at tern.eclipse.ide.internal.core.resources.IDETernProjectSynchronizer.disposeTernProject(IDETernProjectSynchronizer.java:93)
+	at tern.eclipse.ide.internal.core.resources.IDETernProjectSynchronizer.resourceChanged(IDETernProjectSynchronizer.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:265)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:368)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1884)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ui.actions.RefreshAction.checkLocationDeleted(RefreshAction.java:144)
+	at org.eclipse.ui.actions.RefreshAction.refreshResource(RefreshAction.java:281)
+	at org.eclipse.ui.actions.RefreshAction$3.execute(RefreshAction.java:238)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jdt.ui.actions.RefreshAction$WrappedWorkbenchRefreshAction.run(RefreshAction.java:113)
+	at org.eclipse.jdt.ui.actions.RefreshAction.performRefresh(RefreshAction.java:195)
+	at org.eclipse.jdt.ui.actions.RefreshAction.access$0(RefreshAction.java:190)
+	at org.eclipse.jdt.ui.actions.RefreshAction$1.run(RefreshAction.java:184)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5409)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:106)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:122)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-07-18 17:59:08.207
+!MESSAGE Resource '/HelloWorld' is not open.
+!SESSION 2016-07-18 22:19:12.515 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2016-07-18 22:19:18.353
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-18 22:19:18.353
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(com.amazonaws.eclipse.dynamodb.editor.runScan,Run scan,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@198524ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.nodeclipse.nodejs.run,Run Node Application,
+		Run Node Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5edaa572,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-07-18 22:19:23.929
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mndpk'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 22:19:36.506
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 22:19:38.651
+!MESSAGE Monitoring content of C:\Users\mndpk\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 22:19:38.772
+!MESSAGE AWS toolkit core plugin initialized after 2267 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-18 22:19:38.784
+!MESSAGE Found valid identity id cache us-east-1:9829a13e-ebf2-45fd-b32d-1513a6246c81
+
+!ENTRY org.eclipse.ui 2 0 2016-07-18 22:19:38.809
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.amazonaws.eclipse.elasticbeanstalk' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-07-19 00:51:07.054
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_91\lib\rt.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aopalliance-1.0-sources.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aopalliance-alpha1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\asm-3.3.1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectj-1.7.1.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectjrt-1.7.3.jar
+  [+] D:\academics\msse\275 zhang\aop jars\aspectjweaver-1.7.0.jar
+  [+] D:\academics\msse\275 zhang\aop jars\cglib-2.2.2.jar
+  [+] D:\downloads\commons-logging-1.2-bin\commons-logging-1.2\commons-logging-1.2.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aop-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-aspects-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-beans-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-context-support-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-core-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-expression-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-instrument-tomcat-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jdbc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-jms-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-messaging-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-orm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-oxm-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-test-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-tx-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-web-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-webmvc-portlet-4.3.1.RELEASE.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-javadoc.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE-sources.jar
+  [+] D:\downloads\spring-framework-4.3.1.RELEASE-dist\spring-framework-4.3.1.RELEASE\libs\spring-websocket-4.3.1.RELEASE.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:167)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.ui 4 120 2016-07-19 00:53:53.939
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
