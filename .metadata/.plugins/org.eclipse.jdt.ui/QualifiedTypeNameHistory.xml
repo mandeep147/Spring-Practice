@@ -31,7 +31,11 @@
 <fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.After"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterReturning"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Around"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+<fullyQualifiedTypeName name="spring.aspect.Loggable"/>
+<fullyQualifiedTypeName name="org.aspectj.weaver.patterns.TypePatternQuestions.Question"/>
 </qualifiedTypeNameHistroy>

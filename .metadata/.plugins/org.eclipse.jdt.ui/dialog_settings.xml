@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="D:\downloads\commons-logging-1.2-bin\commons-logging-1.2" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="D:\Masters\downloads\commons-logging-1.2-bin\commons-logging-1.2" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
@@ -34,6 +34,21 @@
 		<item value="790" key="width"/>
 		<item value="400" key="height"/>
 	</section>
+	<section name="FatJarPackageWizard">
+		<item value="D:\Masters\spring practice" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
+		<item value="HelloWorld - HelloWorld" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="D:\msse\2nd sem\275 Zhang\lab 0\HelloWorld.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
+		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="D:\msse\2nd sem\275 Zhang\lab 0\HelloWorld.jar"/>
+			<item value="D:\msse\2nd sem\275 Zhang\lab 0\lab0.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="D:\Masters\spring practice.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="Comments"/>
@@ -41,7 +56,7 @@
 		<item value="false" key="FinalModifier"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item value="9" key="index"/>
+		<item value="8" key="index"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
 		<item value="2" key="pageIndex"/>
